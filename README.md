@@ -92,4 +92,4 @@ Xception-SSDLite : https://qiita.com/tanakataiki/items/63fa46f529174d8e4c03
 # Licence
 The MIT License (MIT)
 
-Copyright (c) 2018 Taiki Tanaka
+Copyright (c) 2018 Taiki Tanaka# ssd_keras
