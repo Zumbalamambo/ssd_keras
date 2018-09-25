@@ -244,7 +244,7 @@ gen = Generator(gt, bbox_util, 16,path_prefix,
 
 
 model = SSD(input_shape, num_classes=NUM_CLASSES)
-model.load_weights('VGG16SSD300weights_voc_2007_class20.hdf5.hdf5', by_name=True)
+#model.load_weights('VGG16SSD300weights_voc_2007_class20.hdf5.hdf5', by_name=True)
 
 
 # In[8]:
