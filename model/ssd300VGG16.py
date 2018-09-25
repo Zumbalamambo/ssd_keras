@@ -142,6 +142,7 @@ def SSD(input_shape, num_classes=21):
     pool6_reshaped = Reshape(target_shape,name='pool6_reshaped')(pool6)
     pool6_mbox_priorbox = PriorBox(img_size, 276.0, max_size=330.0, aspect_ratios=[2, 3], variances=[0.1, 0.1, 0.2, 0.2],name='pool6_mbox_priorbox')(pool6_reshaped)
     # Gather all predictions
+    #keras 2 >=
     mbox_loc = concatenate([conv4_3_norm_mbox_loc_flat,fc7_mbox_loc_flat,conv6_2_mbox_loc_flat,conv7_2_mbox_loc_flat,conv8_2_mbox_loc_flat,pool6_mbox_loc_flat],axis=1, name='mbox_loc')
     mbox_conf = concatenate([conv4_3_norm_mbox_conf_flat,fc7_mbox_conf_flat,conv6_2_mbox_conf_flat,conv7_2_mbox_conf_flat,conv8_2_mbox_conf_flat,pool6_mbox_conf_flat],axis=1, name='mbox_conf')
     mbox_priorbox = concatenate([conv4_3_norm_mbox_priorbox,fc7_mbox_priorbox,conv6_2_mbox_priorbox,conv7_2_mbox_priorbox,conv8_2_mbox_priorbox,pool6_mbox_priorbox],axis=1,name='mbox_priorbox')
