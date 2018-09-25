@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Tomato_annotation</folder>
+	<filename>119_0.jpg</filename>
+	<path>/Users/choejongmun/Desktop/paper/高知県/Tomato_annotation/119_0.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>234</width>
+		<height>215</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>tomato</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>17</xmin>
+			<ymin>22</ymin>
+			<xmax>226</xmax>
+			<ymax>202</ymax>
+		</bndbox>
+	</object>
+</annotation>
